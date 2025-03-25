@@ -1,0 +1,3 @@
+ RewriteEngine On
+
+ RewriteRule ^admin$ index.php?controller=admin [L,QSA]

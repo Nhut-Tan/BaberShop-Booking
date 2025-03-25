@@ -1,0 +1,126 @@
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .navbar-toggler {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+  }
+  
+  .navbar-toggler.collapsed {
+    background-color: #f1efec; /* Màu khi navbar bị thu gọn */
+    color: white; /* Màu của biểu tượng */
+  }
+  
+  .navbar-toggler:not(.collapsed) {
+    background-color: #f0e9e9; /* Màu khi navbar được mở rộng */
+    color: white; /* Màu của biểu tượng */
+  }
+  .navbar-nav .nav-link:hover {
+    color: #FFD700; /* Thay đổi màu chữ khi hover, ví dụ: vàng */
+    background-color: #4793df; /* Thay đổi màu nền khi hover */
+  }
+
+  /* Tùy chỉnh cho nút tìm kiếm khi hover */
+  .btn:hover {
+    background-color: #14abda; /* Thay đổi màu nền nút khi hover */
+    color: #f1f1f1; /* Thay đổi màu chữ nút khi hover */
+  }
+
+ nav{
+    background-color: rgb(0, 0, 0);
+ }
+ .nav-item .nav-link{
+    font-size: 20px; 
+    font-family: "Archivo", sans-serif;
+    font-weight: bold ;
+    border-radius:15px ;
+ }
+
+.navbar-brand{
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+    color: #f5ebeb;
+ }
+ 
+ .btn {
+    font-family: "Archivo", sans-serif;
+}
+ /* CSS cho slideshow */
+ .slideshow-container {
+  position: relative;
+  width: 100vw; /* Chiều rộng toàn màn hình */
+ /* Chiều cao toàn màn hình */
+  overflow: hidden;
+}
+
+/* Slide */
+.slides {
+  display: flex;
+  transition: transform 1s ease;
+  width: 300%; /* Điều chỉnh tùy thuộc vào số lượng ảnh */
+}
+
+.mySlides {
+  min-width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Dấu chấm */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #080808;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+
+
+/* Đảm bảo logo có kích thước cố định */
+.navbar .logo {
+  width: 100%; /* Kích thước cố định */
+  height: auto; /* Giữ tỷ lệ hình ảnh không bị biến dạng */
+}
+
+
+
+/* Tùy chỉnh đường ngang */
+.custom-hr {
+  border: 0;
+  border-top: 50px solid rgb(0, 0, 0); /* Đặt độ dày và màu sắc cho đường ngang */
+  margin: 40px 0; /* Tạo khoảng cách trên và dưới đường ngang */
+}
+html {
+  scroll-behavior: smooth; /* Thêm thuộc tính này để trang cuộn mượt mà */
+}
+
+
+
+ /* Đặt một độ cao cho các phần nội dung bên dưới để thấy rõ hiệu ứng khi cuộn */
+ .content {
+  padding-top: 80px; /* Điều chỉnh theo độ cao thanh menu */
+}
+
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Đảm bảo thanh menu luôn nằm trên cùng */
+}
+
+
